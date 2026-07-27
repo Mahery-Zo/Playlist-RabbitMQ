@@ -1,0 +1,47 @@
+Act en tant que Formateur Technique Senior et Expert Vue.js 3. 
+
+Je prépare une évaluation pratique pour lundi sur un projet d'intégration (NewApp en Vue.js lié à PrestaShop). Durant cette épreuve, je n'aurai pas accès à une IA. J'ai un besoin crucial d'une DOCUMENTATION DE RÉFÉRENCE ULTIME, ultra-complète et autonome sur la GESTION DES FORMULAIRES avec Vue 3 (Composition API, <script setup>). 
+
+Cette documentation doit me servir de "cheat-sheet" (feuille de triche légale) durant mon examen. Elle doit couvrir absolument TOUS les cas de figure et types d'inputs que je pourrais rencontrer, avec du code complet, fonctionnel et lourdement commenté.
+
+---
+
+### 🛠️ EXIGENCES DE STRUCTURE ET RECHERCHE RAPIDE (CTRL + F) :
+1. INDEX DE RECHERCHE RAPIDE : Au tout début, crée un index textuel avec des ancres ou des mots-clés uniques pour que je puisse faire un "Ctrl + F" et sauter directement à la bonne section en 2 secondes (ex: #REF-INPUT-TEXT, #REF-XML-GENERATION, etc.).
+2. MOTS-CLÉS DE RECHERCHE : Chaque section de code doit contenir des commentaires avec des mots-clés spécifiques en anglais et en français (ex: // [KEYWORDS: select, dropdown, liste déroulante, v-model, options]) pour faciliter la recherche par mot-clé durant l'épreuve.
+3. CODE ROBUSTE ET COMPLET : Pas de raccourcis, pas de "// ... le reste du code ici". Chaque exemple doit être un bloc de code Vue.js complet et propre.
+
+---
+
+### 📦 CONTENU REQUIS DANS LA DOCUMENTATION :
+
+#### SECTION 1 : Guide de Référence des Inputs (La totale)
+Fournis un seul grand composant Vue (ou des exemples distincts mais complets) qui montre la liaison bidirectionnelle (v-model), la récupération des valeurs, et l'affichage dynamique pour CHAQUE type d'input :
+- [ ] Texte simple & Zone de texte (input text, textarea)
+- [ ] Nombres (input number avec modificateur .number)
+- [ ] Cases à cocher (Checkbox simple booléenne et groupe de Checkboxes liées à un tableau)
+- [ ] Boutons radio (Radio buttons pour choix unique)
+- [ ] Listes déroulantes (Select simple et Select multiple)
+- [ ] Upload de fichier (Input file pour récupérer le fichier XML, le lire avec FileReader et afficher son contenu brut sous forme de texte)
+
+#### SECTION 2 : Validation de Formulaire "À la main" (Sans bibliothèque externe)
+Puisque je n'aurai peut-être pas le droit d'installer des paquets comme Vuelidate, montre-moi comment valider proprement un formulaire en pur JavaScript/Vue 3 :
+- Gestion d'un objet d'erreurs réactif (`const errors = ref({})`).
+- Validation au moment de la soumission (`onSubmit`).
+- Validation en temps réel (au changement ou à la perte de focus `@blur`).
+- Exemples de règles de validation courantes : champ requis, email valide, nombre minimum/maximum, fichier obligatoirement au format .xml.
+
+#### SECTION 3 : Génération de Payload XML depuis le Formulaire
+Montre-moi comment prendre les données réactives de mon formulaire Vue (qui sont des objets JS) et les transformer en chaîne de caractères XML valide pour l'envoyer à l'API PrestaShop :
+- Cas 1 : En utilisant l'API native du navigateur `document.implementation.createDocument` ou la concaténation propre sous forme de Template String (la méthode la plus sûre si je n'ai pas de bibliothèque externe).
+- Cas 2 : En utilisant une bibliothèque si elle est installée (comme fast-xml-parser).
+
+#### SECTION 4 : Envoi et Réception (XML ↔ Axios)
+Donne-moi le code exact pour :
+- Configurer Axios pour forcer l'envoi et la réception de XML (les bons Headers).
+- Faire un POST pour créer une entité avec les données du formulaire converties en XML.
+- Gérer proprement les erreurs de requête (ex: afficher l'erreur renvoyée par le serveur).
+
+---
+
+Rédige cette documentation en français, avec un ton extrêmement pédagogique, limpide et orienté "survie à l'examen". Sois le plus exhaustif possible sur le code.

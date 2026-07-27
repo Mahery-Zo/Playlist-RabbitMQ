@@ -1,0 +1,64 @@
+L'endpoint /api/order_slip correspond à la gestion des Avoirs (Credit Slips) dans PrestaShop.
+
+Un avoir est un document comptable généré lorsqu'une commande est partiellement ou totalement annulée et/ou remboursée. Il permet de justifier le montant restitué au client (que ce soit pour les produits ou pour les frais de port).
+
+Voici tout ce qu'il faut savoir sur cet endpoint :
+
+1. À quoi sert-il concrètement ?
+Si vous annulez une commande via l'API (en changeant le statut via order_histories comme vu précédemment), l'avoir n'est pas forcément généré automatiquement (cela dépend de la configuration et du module de paiement). Si vous avez besoin d'avoir une trace comptable du remboursement de cette livraison ou des produits, vous devez créer une entrée dans order_slip.
+
+2. Les champs principaux de l'entité
+Lorsque vous interrogez ou créez un avoir (GET ou POST sur /api/order_slips), vous retrouverez ces informations principales :
+
+id_order : L'ID de la commande annulée/remboursée.
+id_customer : L'ID du client concerné.
+amount : Le montant global de l'avoir.
+total_products_tax_excl / total_products_tax_incl : Le montant total remboursé sur les produits (HT / TTC).
+total_shipping_tax_excl / total_shipping_tax_incl : Le montant total remboursé sur la livraison (HT / TTC).
+shipping_cost_amount : Le montant des frais de port remboursés.
+partial : Vaut 1 si c'est un remboursement partiel, sinon 0.
+3. Le détail des produits remboursés (Associations)
+Un avoir n'est pas seulement un montant global, il est rattaché aux lignes de produits exactes de la commande qui ont été annulées. Cela se gère via la section associations > order_slip_details de l'API.
+
+Pour chaque produit remboursé, il faut préciser :
+
+id_order_detail : L'ID de la ligne de produit dans la commande (attention, ce n'est pas l'ID du produit lui-même, mais l'ID de sa ligne dans la table order_detail).
+product_quantity : La quantité de ce produit qui est annulée/remboursée.
+amount_tax_excl / amount_tax_incl : Le montant remboursé pour cette ligne spécifique.
+4. Exemple de création (Requête POST)
+Si vous souhaitez générer un avoir lors de votre processus d'annulation de livraison, vous devrez envoyer un flux XML de ce type à l'endpoint /api/order_slips :
+
+xml
+
+
+<prestashop>
+    <order_slip>
+        <id_customer>4</id_customer>
+        <id_order>15</id_order>
+        <conversion_rate>1.000000</conversion_rate>
+        <total_products_tax_excl>25.00</total_products_tax_excl>
+        <total_products_tax_incl>30.00</total_products_tax_incl>
+        <total_shipping_tax_excl>5.00</total_shipping_tax_excl> <!-- Remboursement de la livraison HT -->
+        <total_shipping_tax_incl>6.00</total_shipping_tax_incl> <!-- Remboursement de la livraison TTC -->
+        <shipping_cost>1</shipping_cost>
+        <shipping_cost_amount>6.00</shipping_cost_amount>
+        <amount>36.00</amount>
+        <partial>0</partial>
+        
+        <associations>
+            <order_slip_details>
+                <!-- Détail de la ligne de produit remboursée -->
+                <order_slip_detail>
+                    <id_order_detail>42</id_order_detail>
+                    <product_quantity>1</product_quantity>
+                    <amount_tax_excl>25.00</amount_tax_excl>
+                    <amount_tax_incl>30.00</amount_tax_incl>
+                </order_slip_detail>
+            </order_slip_details>
+        </associations>
+    </order_slip>
+</prestashop>
+En résumé pour votre besoin : Pour un processus d'annulation de livraison propre et complet :
+
+Vous passez le statut de la commande en "Annulé" via /api/order_histories.
+(Optionnel mais recommandé pour la comptabilité) Vous créez le document d'avoir correspondant via /api/order_slips en incluant le remboursement des produits et de la livraison.

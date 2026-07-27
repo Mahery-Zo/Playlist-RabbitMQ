@@ -1,0 +1,3 @@
+<template>
+    Vita eee
+</template>

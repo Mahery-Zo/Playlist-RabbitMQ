@@ -1,0 +1,48 @@
+Act en tant que Formateur Technique Senior et Expert Vue.js 3. 
+
+Je prépare une évaluation pratique pour lundi sur un projet d'intégration (NewApp en Vue.js lié à l'API PrestaShop). Durant cette épreuve, je n'aurai pas accès à une IA, mais j'ai le droit d'utiliser Internet pour installer des bibliothèques npm via mon terminal si cela me facilite la tâche.
+
+J'ai un besoin crucial d'une DOCUMENTATION DE RÉFÉRENCE ULTIME, ultra-complète et autonome sur la GESTION DES FORMULAIRES et de l'échange XML avec Vue 3 (Composition API, <script setup>). Elle me servira de guide de survie durant mon examen.
+
+---
+
+### 🛠️ EXIGENCES DE STRUCTURE ET RECHERCHE RAPIDE (CTRL + F) :
+1. INDEX DE RECHERCHE RAPIDE : Au tout début, crée un index textuel avec des ancres ou des mots-clés uniques pour que je puisse faire un "Ctrl + F" et sauter directement à la bonne section en 2 secondes (ex: #REF-INPUT-SELECT, #REF-XML-FAST-PARSER, etc.).
+2. MOTS-CLÉS DE RECHERCHE : Chaque section de code doit contenir des commentaires avec des mots-clés spécifiques en anglais et en français (ex: // [KEYWORDS: select, dropdown, liste déroulante, v-model, options]) pour faciliter la recherche par mot-clé durant l'épreuve.
+3. CODE PRÊT À L'EMPLOI : Fournis des exemples de code complets, propres et fonctionnels sans placeholders vides ni commentaires du type "// ... implémenter ici".
+
+---
+
+### 📦 CONTENU REQUIS DANS LA DOCUMENTATION :
+
+#### SECTION 1 : Guide de Référence des Inputs Vue 3 (Syntaxe Standard)
+Fournis un exemple de code complet pour chaque type d'input lié à une variable réactive (`ref`) :
+- [ ] Texte simple & Zone de texte (input text, textarea)
+- [ ] Nombres (input number avec le modificateur `.number` pour avoir un vrai type Number en JS)
+- [ ] Case à cocher unique (boolean) et groupe de checkboxes (liées à un tableau `[]`)
+- [ ] Boutons radio (choix unique)
+- [ ] Liste déroulante (select simple et dynamique avec une boucle `v-for`)
+- [ ] Upload de fichier XML (Input file avec récupération du fichier, lecture du contenu brut en texte via `FileReader` et affichage à l'écran)
+
+#### SECTION 2 : Validation de Formulaire Simple et Rapide
+Montre-moi comment mettre en place une validation efficace :
+- Option A (La plus rapide sans package) : Validation HTML5 native (attributs `required`, `min`, `max`, `pattern`) combinée avec le comportement de Vue.
+- Option B (Avec package) : Une méthode simple de validation avec un objet d'erreurs réactif (`errors.value`) mis à jour à la soumission pour valider les emails, la présence des champs obligatoires et l'extension du fichier (obligatoirement `.xml`).
+
+#### SECTION 3 : Traduction XML ↔ Objet JS avec "fast-xml-parser"
+Puisque je peux installer des paquets, `fast-xml-parser` est indispensable. Donne-moi le guide d'installation et le code exact pour :
+1. Installer la bibliothèque (`npm install fast-xml-parser`).
+2. Convertir un objet JavaScript (issu de mon formulaire) en chaîne XML formatée selon les exigences de PrestaShop (avec déclaration de version XML en en-tête).
+3. Convertir une réponse XML reçue de PrestaShop en objet JS manipulable par Vue.
+4. Gérer les cas où le XML contient des attributs ou des tableaux d'éléments.
+
+#### SECTION 4 : Axios & Envoi du Payload XML à l'API PrestaShop
+Donne-moi le code complet d'un service d'API avec Axios configuré pour :
+- Envoyer et recevoir du XML (Headers `Content-Type: application/xml` et `Accept: application/xml`).
+- Configurer l'authentification par clé API PrestaShop (Basic Auth).
+- Faire une requête `POST` pour envoyer le XML généré à partir du formulaire et traiter la réponse (XML) du serveur.
+- Gérer proprement les erreurs réseau ou d'API.
+
+---
+
+Rédige cette documentation en français, de manière extrêmement structurée, claire et pédagogique. Elle doit être ma feuille de route absolue pour coder n'importe quel formulaire et import XML lundi sans paniquer.

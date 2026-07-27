@@ -1,0 +1,30 @@
+Act en tant qu'Architecte Logiciel Senior et Lead Developer technique de premier plan.
+
+Je souhaite que tu rédiges une documentation technique ultra-complète, pédagogique et structurée pour : [indiquer précisément le module, la couche ou le répertoire à documenter, ex: "le dossier 'stores' du Frontend Vue.js" ou "la couche d'accès aux données (Infrastructure)"].
+
+Cette documentation est destinée à notre équipe de développement. Elle doit être rédigée avec un ton professionnel, clair, accessible et très encourageant (idéal pour onboarder un nouveau développeur).
+
+Voici la structure et les exigences strictes à respecter pour ce document :
+
+1. 🎯 VUE D'ENSEMBLE, RÔLE ET RESPONSABILITÉS :
+   - Explique le rôle fondamental de cette partie du projet : "Qu'est-ce que c'est ?" et "Pourquoi existe-t-elle ?".
+   - Précise comment elle interagit avec le reste du système (quelles sont ses dépendances entrantes et sortantes).
+   - Indique clairement ce qu'elle a le droit de faire et, surtout, ce qu'elle NE DOIT PAS faire (frontières architecturales).
+
+2. 📂 ARBORESCENCE ET STRUCTURE DES DOSSIERS :
+   - Génère l'arborescence complète et propre des fichiers/dossiers sous forme de bloc de code.
+   - Fournis une légende claire décrivant brièvement la responsabilité de chaque sous-dossier ou fichier clé.
+
+3. 🧱 CONCEPTS CLÉS ET CODE DE RÉFÉRENCE :
+   - Pour chaque composant majeur, classe, fonction ou configuration de cette couche, donne un exemple de code moderne, propre, robuste et entièrement commenté dans le langage du projet : [indiquer le langage de programmation et/ou le framework, ex: "TypeScript / Vue 3" ou "C# .NET 9"].
+   - IMPORTANT : Fournis des exemples de code réalistes et complets. Évite absolument les placeholders vides, le pseudo-code ou les commentaires du type "// TODO: implémenter la logique ici". Tout le code d'exemple doit être fonctionnel dans son principe.
+   - Explique l'utilité profonde de chaque élément de code présenté.
+
+4. 🔄 FLUX DE DONNÉES ÉTAPE PAR ÉTAPE :
+   - Schématise (à l'aide d'un diagramme textuel, de flèches ou d'étapes numérotées claires) le chemin exact emprunté par la donnée ou par une requête lorsqu'elle traverse cette couche.
+
+5. 💡 BONNES PRATIQUES (Do's and Don'ts) :
+   - Dresse une liste claire et scannable des choses à faire (✅) pour maintenir un code propre et maintenable.
+   - Dresse une liste des erreurs courantes ou des mauvaises pratiques à éviter absolument (❌).
+
+Rédige l'intégralité de cette documentation en français, en utilisant un formatage Markdown soigné (tableaux, listes à puces, blocs de citation pour les remarques importantes, et gras pour faciliter la lecture rapide).
