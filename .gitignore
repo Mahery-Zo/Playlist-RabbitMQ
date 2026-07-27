@@ -5,8 +5,8 @@
 target/
 
 # Données locales
-repertoire/
-storage/
+/repertoire/
+/storage/
 
 # IDE
 .idea/
