@@ -1,0 +1,30 @@
+# Démarre les 2 services dont le projet a besoin.
+# Lancement :  docker compose up -d
+# Arrêt :      docker compose down
+# UI RabbitMQ : http://localhost:15672   (user/pass = .env)
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: naina-rabbitmq
+    ports:
+      - "5672:5672"     # AMQP (le code Java se connecte ici)
+      - "15672:15672"   # interface web d'administration
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBIT_USER:-guest}
+      RABBITMQ_DEFAULT_PASS: ${RABBIT_PASS:-guest}
+
+  mysql:
+    image: mysql:8
+    container_name: naina-mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-naina}
+      MYSQL_USER: ${MYSQL_USER:-naina}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-naina}
+    volumes:
+      - naina-mysql-data:/var/lib/mysql   # les données survivent au redémarrage
+
+volumes:
+  naina-mysql-data:

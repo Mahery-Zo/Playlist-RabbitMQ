@@ -1,0 +1,22 @@
+WEB :
+    Fonctionnalité dans list playlist 
+    possibilite faire fusion plusieurs playlist 
+    check box pour chaque ligne de playlist et boutton fuisionne rpour fusionner les playliste selectionne dan sle playlist
+    si il y a doublons musqiue 1 seul est prise en compte pas de doublons dans la nouvelle playlist
+Desk 
+    Programme 3 
+        fichier :durée(en seconde)  
+        si durée d'un chanson est > a ce nombre contenu dans le fichier ,
+        on le traite seulement , mais on l'envoie pas dans l'api , on ne le supprime pas du repertoire  , on ne l'envoie juste pas dans le web , meme cas pour les blacklistés
+        
+
+Playlist 1 :10mn
+    Genre Inclure : flok , slow
+    Genre Exclure:
+
+    Artist    Exclure : Bessa 
+Playlist 2 :13mn
+
+    Exclure genre : Jazz 
+    Inclure artiste : Rija Ramanantoanina , Bessa , Eric Manana
+    Exclure artiste : Mahaleo

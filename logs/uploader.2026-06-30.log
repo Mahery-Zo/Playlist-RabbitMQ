@@ -1,0 +1,30 @@
+2026-06-30 16:39:38 INFO  [UploaderApp] P3 Uploader démarré — API=http://localhost:8090 | en attente sur 'queue.metadata'
+2026-06-30 16:48:47 INFO  [UploaderApp] Blacklist chargée : 1 artistes, 1 genres
+2026-06-30 16:48:47 INFO  [UploaderApp] P3 Uploader démarré — API=http://localhost:8090 | en attente sur 'queue.metadata'
+2026-06-30 16:52:34 INFO  [UploaderApp] Uploadé puis supprimé du répertoire : Ankino.mp3 (HTTP 201)
+2026-06-30 16:52:34 INFO  [UploaderApp] Uploadé puis supprimé du répertoire : Antanambao.MP3 (HTTP 201)
+2026-06-30 16:52:34 INFO  [UploaderApp] Uploadé puis supprimé du répertoire : IAO.MP3 (HTTP 201)
+2026-06-30 16:53:33 INFO  [UploaderApp] Uploadé puis supprimé du répertoire : Kerchak - Femmes.mp3 (HTTP 201)
+2026-06-30 16:53:33 INFO  [UploaderApp] Uploadé puis supprimé du répertoire : Kerchak - Peur feat. @ZiakCC (Clip Officiel).mp3 (HTTP 201)
+2026-06-30 16:57:26 INFO  [UploaderApp] Blacklist chargée : 1 artistes, 1 genres
+2026-06-30 16:57:26 INFO  [UploaderApp] P3 Uploader démarré — API=http://localhost:8090 | en attente sur 'queue.metadata'
+2026-06-30 16:59:15 INFO  [UploaderApp] Uploadé puis supprimé du répertoire : Ankino.mp3 (HTTP 201)
+2026-06-30 16:59:15 INFO  [UploaderApp] Uploadé puis supprimé du répertoire : Antanambao.MP3 (HTTP 201)
+2026-06-30 16:59:15 INFO  [UploaderApp] Uploadé puis supprimé du répertoire : IAO.MP3 (HTTP 201)
+2026-06-30 17:06:58 INFO  [UploaderApp] Blacklist chargée : 1 artistes, 1 genres
+2026-06-30 17:06:59 INFO  [UploaderApp] P3 Uploader démarré — API=http://localhost:8090 | en attente sur 'queue.metadata'
+2026-06-30 17:08:59 INFO  [UploaderApp] Blacklist chargée : 1 artistes, 1 genres
+2026-06-30 17:08:59 INFO  [UploaderApp] P3 Uploader démarré — API=http://localhost:8090 | en attente sur 'queue.metadata'
+2026-06-30 17:10:20 INFO  [UploaderApp] Blacklist chargée : 1 artistes, 1 genres
+2026-06-30 17:10:20 INFO  [UploaderApp] P3 Uploader démarré — API=http://localhost:8090 | en attente sur 'queue.metadata'
+2026-06-30 17:11:41 INFO  [UploaderApp] Uploadé puis supprimé du répertoire : Ankino.mp3 (HTTP 201)
+2026-06-30 17:11:41 INFO  [UploaderApp] Uploadé puis supprimé du répertoire : Antanambao.MP3 (HTTP 201)
+2026-06-30 17:11:41 INFO  [UploaderApp] Uploadé puis supprimé du répertoire : IAO.MP3 (HTTP 201)
+2026-06-30 17:12:11 INFO  [UploaderApp] Blacklist chargée : 1 artistes, 1 genres
+2026-06-30 17:12:11 INFO  [UploaderApp] P3 Uploader démarré — API=http://localhost:8090 | en attente sur 'queue.metadata'
+2026-06-30 17:12:22 INFO  [UploaderApp] Uploadé puis supprimé du répertoire : Ankino.mp3 (HTTP 201)
+2026-06-30 17:12:22 INFO  [UploaderApp] Uploadé puis supprimé du répertoire : Antanambao.MP3 (HTTP 201)
+2026-06-30 17:12:22 INFO  [UploaderApp] Uploadé puis supprimé du répertoire : IAO.MP3 (HTTP 201)
+2026-06-30 17:30:41 WARN  [UploaderApp] Fichier blacklisté ignoré et supprimé : Ankino.mp3 (Artiste: Bodo, Genre: Pop)
+2026-06-30 17:30:41 INFO  [UploaderApp] Uploadé puis supprimé du répertoire : Antanambao.MP3 (HTTP 201)
+2026-06-30 17:30:41 INFO  [UploaderApp] Uploadé puis supprimé du répertoire : IAO.MP3 (HTTP 201)

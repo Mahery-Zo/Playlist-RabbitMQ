@@ -1,39 +1,18 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# Secrets / config locale
+.env
 
-node_modules
-.DS_Store
-dist
-dist-ssr
-coverage
-*.local
+# Build Java
+target/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# Données locales
+repertoire/
+storage/
 
-*.tsbuildinfo
+# IDE
+.idea/
+*.iml
+.vscode/
 
-.eslintcache
-
-# Cypress
-/cypress/videos/
-/cypress/screenshots/
-
-# Vitest
-__screenshots__/
-
-# Vite
-*.timestamp-*-*.mjs
+# Front
+front/node_modules/
+front/dist/

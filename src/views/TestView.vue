@@ -1,3 +1,0 @@
-<template>
-    Vita eee
-</template>

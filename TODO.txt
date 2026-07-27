@@ -1,0 +1,41 @@
+Gestion mp3
+	-Generation playlist
+Back : DESKTOP (standlone(main terminale)) manoratra log Java 
+
+	Repertoire (stocker musique)
+	
+Programmme listen ny repertoire : misy hira vao(manampoitra liens anle mps3(mp3 ihany)) , nisy ny copie 
+	-LIste mp3 ao anaty mp3 (3min programmable) : chemin
+	-Log : 
+	-Producer Queue 
+-2 eme programmme (arg : liste chemeins(liens absolue)): 
+	-Extraction metadata (headere : , titre , anarany ,genre , artist , date , ...) 	
+	-Log : 
+	-Producer Queue , Consumer Queue Program1
+-3 eme programme (arg : ListFichier , metaData) :
+	-Mandefa ny Fichier miaraka am meta data any am API
+	-Rehefa lasa ilay fichier : supprimer ireo ireo fichier envoyé ao anaty  repertoire 
+	-Log
+	-Consumer Queue Program2
+
+Message broker (Programation par message)
+	Tsy synchrone 
+	Tsy mifampiantso ilay programme fa mifampandefa ireo message any am lib No sady miseconnecte amle lib(composant) "Raha misy message adréssé aminy ao am ilay lib dia ilay argument ilainy zay"
+lib : Rabbit MQ (MessageQeue)
+
+
+	
+Front : Web Vue 
+	
+
+- CRUD MP3 
+-Generation Playlist :
+	-Avec critere :
+		-genre , ...
+		-Durée (fitambaran ilay duree)
+		-Afaka sauvegardeny ny playlist ao am web (pour chaque utilisateur )
+			-manome anaran ilayn play list 
+		-Afaka enoiny ao am ilay Web
+		-Afaka telechargeny playlist : sous format zip
+-Apres generation :
+	-afaka manova an ilay composé an ilay playlist ilay client (manampy hira na manala hira na manolo hira 1 )

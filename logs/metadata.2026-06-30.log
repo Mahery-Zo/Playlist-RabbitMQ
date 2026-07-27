@@ -1,0 +1,21 @@
+2026-06-30 16:49:33 INFO  [MetadataApp] P2 Metadata démarré — broker=localhost:5672 | en attente sur 'queue.new-files'
+2026-06-30 16:52:33 INFO  [MetadataApp] Métadonnées extraites : Ankino.mp3 — titre='Bodo', artiste='null', genre='Pop', durée=231s
+2026-06-30 16:52:33 INFO  [MetadataApp] Métadonnées extraites : Antanambao.MP3 — titre='Antanambao', artiste='Bekoto Augustin', genre='Folk', durée=175s
+2026-06-30 16:52:33 INFO  [MetadataApp] Métadonnées extraites : IAO.MP3 — titre='IAO', artiste='ROSSY', genre='salegy', durée=229s
+2026-06-30 16:53:32 INFO  [MetadataApp] Métadonnées extraites : Kerchak - Femmes.mp3 — titre='null', artiste='null', genre='null', durée=132s
+2026-06-30 16:53:32 INFO  [MetadataApp] Métadonnées extraites : Kerchak - Peur feat. @ZiakCC (Clip Officiel).mp3 — titre='null', artiste='null', genre='null', durée=191s
+2026-06-30 16:55:18 INFO  [MetadataApp] P2 Metadata démarré — broker=localhost:5672 | en attente sur 'queue.new-files'
+2026-06-30 16:57:31 INFO  [MetadataApp] P2 Metadata démarré — broker=localhost:5672 | en attente sur 'queue.new-files'
+2026-06-30 16:59:15 INFO  [MetadataApp] Métadonnées extraites : Ankino.mp3 — titre='Bodo', artiste='null', genre='Pop', durée=231s
+2026-06-30 16:59:15 INFO  [MetadataApp] Métadonnées extraites : Antanambao.MP3 — titre='Antanambao', artiste='Bekoto Augustin', genre='Folk', durée=175s
+2026-06-30 16:59:15 INFO  [MetadataApp] Métadonnées extraites : IAO.MP3 — titre='IAO', artiste='ROSSY', genre='salegy', durée=229s
+2026-06-30 17:10:25 INFO  [MetadataApp] P2 Metadata démarré — broker=localhost:5672 | en attente sur 'queue.new-files'
+2026-06-30 17:11:41 INFO  [MetadataApp] Métadonnées extraites : Ankino.mp3 — titre='Bodo', artiste='null', genre='Pop', durée=231s
+2026-06-30 17:11:41 INFO  [MetadataApp] Métadonnées extraites : Antanambao.MP3 — titre='Antanambao', artiste='Bekoto Augustin', genre='Folk', durée=175s
+2026-06-30 17:11:41 INFO  [MetadataApp] Métadonnées extraites : IAO.MP3 — titre='IAO', artiste='ROSSY', genre='salegy', durée=229s
+2026-06-30 17:12:22 INFO  [MetadataApp] Métadonnées extraites : Ankino.mp3 — titre='Bodo', artiste='null', genre='Pop', durée=231s
+2026-06-30 17:12:22 INFO  [MetadataApp] Métadonnées extraites : Antanambao.MP3 — titre='Antanambao', artiste='Bekoto Augustin', genre='Folk', durée=175s
+2026-06-30 17:12:22 INFO  [MetadataApp] Métadonnées extraites : IAO.MP3 — titre='IAO', artiste='ROSSY', genre='salegy', durée=229s
+2026-06-30 17:30:41 INFO  [MetadataApp] Métadonnées extraites : Ankino.mp3 — titre='Ankino', artiste='Bodo', genre='Pop', durée=231s
+2026-06-30 17:30:41 INFO  [MetadataApp] Métadonnées extraites : Antanambao.MP3 — titre='Antanambao', artiste='Bekoto Augustin', genre='Folk', durée=175s
+2026-06-30 17:30:41 INFO  [MetadataApp] Métadonnées extraites : IAO.MP3 — titre='IAO', artiste='ROSSY', genre='salegy', durée=229s
